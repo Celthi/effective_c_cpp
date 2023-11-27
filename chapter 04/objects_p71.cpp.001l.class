@@ -1,0 +1,105 @@
+Class _GUID
+   size=16 align=4
+   base size=16 base align=4
+_GUID (0x0x7f200bae2420) 0
+
+Class _ATL_INTMAP_ENTRY
+   size=24 align=8
+   base size=24 base align=8
+_ATL_INTMAP_ENTRY (0x0x7f200bae2480) 0
+
+Class _ATL_CHAINDATA
+   size=16 align=8
+   base size=16 base align=8
+_ATL_CHAINDATA (0x0x7f200bae24e0) 0
+
+Vtable for IUnknown
+IUnknown::_ZTV8IUnknown: 5 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI8IUnknown)
+16    (int (*)(...))__cxa_pure_virtual
+24    (int (*)(...))__cxa_pure_virtual
+32    (int (*)(...))__cxa_pure_virtual
+
+Class IUnknown
+   size=8 align=8
+   base size=8 base align=8
+IUnknown (0x0x7f200bae2540) 0 nearly-empty
+    vptr=((& IUnknown::_ZTV8IUnknown) + 16)
+
+Vtable for IClassFactory
+IClassFactory::_ZTV13IClassFactory: 7 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI13IClassFactory)
+16    (int (*)(...))__cxa_pure_virtual
+24    (int (*)(...))__cxa_pure_virtual
+32    (int (*)(...))__cxa_pure_virtual
+40    (int (*)(...))__cxa_pure_virtual
+48    (int (*)(...))__cxa_pure_virtual
+
+Class IClassFactory
+   size=8 align=8
+   base size=8 base align=8
+IClassFactory (0x0x7f200b9863a8) 0 nearly-empty
+    vptr=((& IClassFactory::_ZTV13IClassFactory) + 16)
+IUnknown (0x0x7f200bae2660) 0 nearly-empty
+      primary-for IClassFactory (0x0x7f200b9863a8)
+
+Class CComObjectRootBase
+   size=16 align=8
+   base size=16 base align=8
+CComObjectRootBase (0x0x7f200bae2720) 0
+
+Class CComFakeCriticalSection
+   size=1 align=1
+   base size=0 base align=1
+CComFakeCriticalSection (0x0x7f200bae2de0) 0 empty
+
+Class CComMultiThreadModel
+   size=1 align=1
+   base size=0 base align=1
+CComMultiThreadModel (0x0x7f200bb18180) 0 empty
+
+Vtable for CComObjectRootEx<CComMultiThreadModel>
+CComObjectRootEx<CComMultiThreadModel>::_ZTV16CComObjectRootExI20CComMultiThreadModelE: 4 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI16CComObjectRootExI20CComMultiThreadModelE)
+16    (int (*)(...))CComObjectRootEx<CComMultiThreadModel>::~CComObjectRootEx
+24    (int (*)(...))CComObjectRootEx<CComMultiThreadModel>::~CComObjectRootEx
+
+Class CComObjectRootEx<CComMultiThreadModel>
+   size=32 align=8
+   base size=32 base align=8
+CComObjectRootEx<CComMultiThreadModel> (0x0x7f200b986478) 0
+    vptr=((& CComObjectRootEx<CComMultiThreadModel>::_ZTV16CComObjectRootExI20CComMultiThreadModelE) + 16)
+CComObjectRootBase (0x0x7f200bb182a0) 8
+
+Vtable for CComClassFactory
+CComClassFactory::_ZTV16CComClassFactory: 13 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI16CComClassFactory)
+16    (int (*)(...))CComClassFactory::QueryInterface
+24    (int (*)(...))CComClassFactory::AddRef
+32    (int (*)(...))CComClassFactory::Release
+40    (int (*)(...))CComClassFactory::CreateInstance
+48    (int (*)(...))CComClassFactory::LockServer
+56    (int (*)(...))CComClassFactory::~CComClassFactory
+64    (int (*)(...))CComClassFactory::~CComClassFactory
+72    (int (*)(...))-8
+80    (int (*)(...))(& _ZTI16CComClassFactory)
+88    (int (*)(...))CComClassFactory::_ZThn8_N16CComClassFactoryD1Ev
+96    (int (*)(...))CComClassFactory::_ZThn8_N16CComClassFactoryD0Ev
+
+Class CComClassFactory
+   size=48 align=8
+   base size=48 base align=8
+CComClassFactory (0x0x7f200bb090e0) 0
+    vptr=((& CComClassFactory::_ZTV16CComClassFactory) + 16)
+IClassFactory (0x0x7f200b9865b0) 0 nearly-empty
+      primary-for CComClassFactory (0x0x7f200bb090e0)
+IUnknown (0x0x7f200bb183c0) 0 nearly-empty
+        primary-for IClassFactory (0x0x7f200b9865b0)
+CComObjectRootEx<CComMultiThreadModel> (0x0x7f200b986618) 8
+      vptr=((& CComClassFactory::_ZTV16CComClassFactory) + 88)
+CComObjectRootBase (0x0x7f200bb18420) 16
+

@@ -1,0 +1,169 @@
+Contents of the .debug_info section:
+
+  Compilation Unit @ offset 0x0:
+   Length:        0x77 (32-bit)
+   Version:       4
+   Abbrev Offset: 0x0
+   Pointer Size:  8
+ <0><b>: Abbrev Number: 1 (DW_TAG_compile_unit)
+    <c>   DW_AT_producer    : (indirect string, offset: 0x0): GNU C++14 10.2.1 20210110 -mtune=generic -march=x86-64 -g -fasynchronous-unwind-tables
+    <10>   DW_AT_language    : 4	(C++)
+    <11>   DW_AT_name        : (indirect string, offset: 0x93): foo.cpp
+    <15>   DW_AT_comp_dir    : (indirect string, offset: 0x67): /workspaces/effective_c_cpp/chapter 01
+    <19>   DW_AT_low_pc      : 0x0
+    <21>   DW_AT_high_pc     : 0x14
+    <29>   DW_AT_stmt_list   : 0x0
+ <1><2d>: Abbrev Number: 2 (DW_TAG_variable)
+    <2e>   DW_AT_name        : (indirect string, offset: 0x8e): gInt
+    <32>   DW_AT_decl_file   : 1
+    <33>   DW_AT_decl_line   : 3
+    <34>   DW_AT_decl_column : 5
+    <35>   DW_AT_type        : <0x43>
+    <39>   DW_AT_external    : 1
+    <39>   DW_AT_location    : 9 byte block: 3 0 0 0 0 0 0 0 0 	(DW_OP_addr: 0)
+ <1><43>: Abbrev Number: 3 (DW_TAG_base_type)
+    <44>   DW_AT_byte_size   : 4
+    <45>   DW_AT_encoding    : 5	(signed)
+    <46>   DW_AT_name        : int
+ <1><4a>: Abbrev Number: 4 (DW_TAG_subprogram)
+    <4b>   DW_AT_external    : 1
+    <4b>   DW_AT_name        : (indirect string, offset: 0x9b): GlobalFunc
+    <4f>   DW_AT_decl_file   : 1
+    <50>   DW_AT_decl_line   : 4
+    <51>   DW_AT_decl_column : 5
+    <52>   DW_AT_linkage_name: (indirect string, offset: 0x57): _Z10GlobalFunci
+    <56>   DW_AT_type        : <0x43>
+    <5a>   DW_AT_low_pc      : 0x0
+    <62>   DW_AT_high_pc     : 0x14
+    <6a>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <6c>   DW_AT_GNU_all_call_sites: 1
+ <2><6c>: Abbrev Number: 5 (DW_TAG_formal_parameter)
+    <6d>   DW_AT_name        : i
+    <6f>   DW_AT_decl_file   : 1
+    <70>   DW_AT_decl_line   : 4
+    <71>   DW_AT_decl_column : 20
+    <72>   DW_AT_type        : <0x43>
+    <76>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><79>: Abbrev Number: 0
+ <1><7a>: Abbrev Number: 0
+
+Contents of the .debug_abbrev section:
+
+  Number TAG (0x0)
+   1      DW_TAG_compile_unit    [has children]
+    DW_AT_producer     DW_FORM_strp
+    DW_AT_language     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT_comp_dir     DW_FORM_strp
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_stmt_list    DW_FORM_sec_offset
+    DW_AT value: 0     DW_FORM value: 0
+   2      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   3      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_string
+    DW_AT value: 0     DW_FORM value: 0
+   4      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_linkage_name DW_FORM_strp
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_call_sites DW_FORM_flag_present
+    DW_AT value: 0     DW_FORM value: 0
+   5      DW_TAG_formal_parameter    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_decl_column  DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+
+Contents of the .debug_aranges section:
+
+  Length:                   44
+  Version:                  2
+  Offset into .debug_info:  0x0
+  Pointer Size:             8
+  Segment Size:             0
+
+    Address            Length
+    0000000000000000 0000000000000014 
+    0000000000000000 0000000000000000 
+
+Raw dump of debug contents of section .debug_line:
+
+  Offset:                      0x0
+  Length:                      64
+  DWARF Version:               3
+  Prologue Length:             30
+  Minimum Instruction Length:  1
+  Initial value of 'is_stmt':  1
+  Line Base:                   -5
+  Line Range:                  14
+  Opcode Base:                 13
+
+ Opcodes:
+  Opcode 1 has 0 args
+  Opcode 2 has 1 arg
+  Opcode 3 has 1 arg
+  Opcode 4 has 1 arg
+  Opcode 5 has 1 arg
+  Opcode 6 has 0 args
+  Opcode 7 has 0 args
+  Opcode 8 has 0 args
+  Opcode 9 has 1 arg
+  Opcode 10 has 0 args
+  Opcode 11 has 0 args
+  Opcode 12 has 1 arg
+
+ The Directory Table is empty.
+
+ The File Name Table (offset 0x1c):
+  Entry	Dir	Time	Size	Name
+  1	0	0	0	foo.cpp
+
+ Line Number Statements:
+  [0x00000028]  Set column to 1
+  [0x0000002a]  Extended opcode 2: set Address to 0x0
+  [0x00000035]  Special opcode 9: advance Address by 0 to 0x0 and Line by 4 to 5
+  [0x00000036]  Set column to 13
+  [0x00000038]  Special opcode 104: advance Address by 7 to 0x7 and Line by 1 to 6
+  [0x00000039]  Set column to 14
+  [0x0000003b]  Special opcode 89: advance Address by 6 to 0xd and Line by 0 to 6
+  [0x0000003c]  Set column to 1
+  [0x0000003e]  Special opcode 76: advance Address by 5 to 0x12 and Line by 1 to 7
+  [0x0000003f]  Advance PC by 2 to 0x14
+  [0x00000041]  Extended opcode 1: End of Sequence
+
+
+Contents of the .debug_str section:
+
+  0x00000000 474e5520 432b2b31 34203130 2e322e31 GNU C++14 10.2.1
+  0x00000010 20323032 31303131 30202d6d 74756e65  20210110 -mtune
+  0x00000020 3d67656e 65726963 202d6d61 7263683d =generic -march=
+  0x00000030 7838362d 3634202d 67202d66 6173796e x86-64 -g -fasyn
+  0x00000040 6368726f 6e6f7573 2d756e77 696e642d chronous-unwind-
+  0x00000050 7461626c 6573005f 5a313047 6c6f6261 tables._Z10Globa
+  0x00000060 6c46756e 6369002f 776f726b 73706163 lFunci./workspac
+  0x00000070 65732f65 66666563 74697665 5f635f63 es/effective_c_c
+  0x00000080 70702f63 68617074 65722030 31006749 pp/chapter 01.gI
+  0x00000090 6e740066 6f6f2e63 70700047 6c6f6261 nt.foo.cpp.Globa
+  0x000000a0 6c46756e 6300                       lFunc.
+
